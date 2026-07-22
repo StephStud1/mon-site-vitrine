@@ -162,6 +162,10 @@ nav.links a.navlink:hover { color: var(--accent); }
 #apropos { background: var(--cream-bg); }
 .apropos-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 56px; align-items: start; }
 .apropos-grid p { color: var(--text-light); margin-bottom: 18px; }
+.apropos-photo-row { display: flex; align-items: center; gap: 18px; margin-bottom: 22px; }
+.apropos-photo { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; border: 3px solid var(--sage); flex-shrink: 0; }
+.apropos-name { font-family: var(--font-serif); font-weight: 600; font-size: 1.05rem; color: var(--ink); }
+.apropos-role { font-size: 0.85rem; color: var(--text-light); }
 .trust-list { list-style: none; background: var(--cream); border-radius: 20px; padding: 8px 28px; }
 .trust-list li {
   display: flex; gap: 14px; align-items: flex-start;
