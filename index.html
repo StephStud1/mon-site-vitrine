@@ -406,10 +406,9 @@
       <h2 class="section-title">Prêt à en discuter ?</h2>
       <p class="lead">Un simple échange pour faire le point sur votre situation actuelle et vos objectifs — sans jargon, sans pression. Je prends en charge tout le reste.</p>
 
-      <form class="contact-form" action="https://formspree.io/f/xnjerayz" method="POST">
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/xnjerayz" method="POST">
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
         <input type="hidden" name="_subject" value="Nouveau message — Présence Locale" />
-        <input type="hidden" name="_next" value="https://presencelocale.vercel.app/merci.html" />
         <div class="form-row">
           <div class="form-field">
             <label for="cf-name">Nom</label>
@@ -430,7 +429,13 @@
         </div>
         <button type="submit" class="btn btn-primary form-submit">Envoyer le message</button>
         <p class="form-note">Réponse sous 24h · Vos informations ne sont utilisées que pour vous répondre.</p>
+        <p id="form-error" class="form-error" hidden>Une erreur est survenue lors de l'envoi. Réessayez, ou écrivez-moi directement par WhatsApp/email ci-dessous.</p>
       </form>
+
+      <div id="form-success" class="form-success" hidden>
+        <p class="apropos-name">Merci, c'est bien reçu !</p>
+        <p>Votre message m'est parvenu directement par email. Je vous réponds sous 24h.</p>
+      </div>
 
       <div class="contact-divider"><span>ou directement</span></div>
 
@@ -457,6 +462,40 @@
   </div>
   <p class="footer-siret">Auto-entrepreneur — SIRET 402 732 911 00050 — Carcassonne, France</p>
 </footer>
+
+<script>
+  var contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var errorEl = document.getElementById('form-error');
+      var successEl = document.getElementById('form-success');
+      errorEl.hidden = true;
+      var submitBtn = contactForm.querySelector('.form-submit');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Envoi en cours…';
+
+      fetch(contactForm.action, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (response) {
+        if (response.ok) {
+          contactForm.hidden = true;
+          successEl.hidden = false;
+        } else {
+          errorEl.hidden = false;
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Envoyer le message';
+        }
+      }).catch(function () {
+        errorEl.hidden = false;
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Envoyer le message';
+      });
+    });
+  }
+</script>
 
 </body>
 </html>

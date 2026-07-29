@@ -392,7 +392,12 @@ nav.links a.navlink:hover { color: var(--accent); }
   border-color: var(--accent-mid);
 }
 .form-submit { width: 100%; justify-content: center; border: none; cursor: pointer; }
+.form-submit:disabled { opacity: 0.7; cursor: default; }
 .form-note { text-align: center; font-size: 0.82rem; color: var(--text-light); margin-top: 14px; }
+.form-error { text-align: center; font-size: 0.85rem; color: #8A3B2E; background: #F5E2DD; border-radius: 10px; padding: 12px 16px; margin-top: 14px; }
+.form-success { text-align: center; background: var(--cream); border-radius: 16px; padding: 32px; }
+.form-success .apropos-name { font-size: 1.15rem; margin-bottom: 8px; }
+.form-success p:not(.apropos-name) { color: var(--text-light); }
 
 .contact-divider { display: flex; align-items: center; gap: 14px; margin: 28px 0 20px; color: var(--text-light); font-size: 0.85rem; }
 .contact-divider::before, .contact-divider::after { content: ""; flex: 1; height: 1px; background: var(--cream2); }
