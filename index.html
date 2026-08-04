@@ -476,6 +476,18 @@
       submitBtn.disabled = true;
       submitBtn.textContent = 'Envoi en cours…';
 
+      // Envoi parallèle vers Make.com (indépendant de Formspree, échec silencieux, ne bloque rien)
+      fetch('https://hook.eu1.make.com/e3rwjwiih4o6lm3hbneilbcuwr4pdwxo', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          Nom: document.getElementById('cf-name').value,
+          email: document.getElementById('cf-email').value,
+          Téléphone: document.getElementById('cf-phone').value,
+          Message: document.getElementById('cf-message').value
+        })
+      }).catch(function () {});
+
       fetch(contactForm.action, {
         method: 'POST',
         body: new FormData(contactForm),
