@@ -38,8 +38,8 @@
   "name": "Essentiel",
   "provider": { "@type": "ProfessionalService", "name": "Présence Locale — Stéphane Siguier" },
   "areaServed": "France",
-  "description": "Création ou optimisation de la fiche Google Business Profile, optimisation des informations, ajout de photos, inscription sur plusieurs annuaires de référence.",
-  "offers": { "@type": "Offer", "price": "290", "priceCurrency": "EUR" }
+  "description": "Création ou optimisation de la fiche Google Business Profile, optimisation des informations, ajout de photos, inscription sur plusieurs annuaires de référence et mise en cohérence de vos coordonnées. Tarif de départ, ajusté selon votre situation.",
+  "offers": { "@type": "Offer", "priceCurrency": "EUR", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 290, "priceCurrency": "EUR" } }
 }
 </script>
 <script type="application/ld+json">
@@ -50,8 +50,8 @@
   "name": "Présence Web",
   "provider": { "@type": "ProfessionalService", "name": "Présence Locale — Stéphane Siguier" },
   "areaServed": "France",
-  "description": "Pack Essentiel complet, création d'un site vitrine professionnel avec formulaire de contact et version mobile, liaison avec la fiche Google.",
-  "offers": { "@type": "Offer", "price": "690", "priceCurrency": "EUR" }
+  "description": "Pack Essentiel complet, création d'un site vitrine professionnel avec formulaire de contact et version mobile, liaison avec la fiche Google. Disponible aussi en site seul (à partir de 490 €) lorsque la fiche Google est déjà en place. Tarif de départ, ajusté selon votre situation.",
+  "offers": { "@type": "Offer", "priceCurrency": "EUR", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 690, "priceCurrency": "EUR" } }
 }
 </script>
 <script type="application/ld+json">
@@ -62,8 +62,8 @@
   "name": "Accompagnement",
   "provider": { "@type": "ProfessionalService", "name": "Présence Locale — Stéphane Siguier" },
   "areaServed": "France",
-  "description": "Mises à jour régulières de la fiche Google, ajout de photos et publications, conseils sur la présence locale, résiliable à tout moment.",
-  "offers": { "@type": "Offer", "price": "49", "priceCurrency": "EUR", "unitText": "mois" }
+  "description": "Mises à jour régulières de la fiche Google, ajout de photos, publications et actualités, réponses aux avis clients, conseils sur la présence locale, résiliable à tout moment.",
+  "offers": { "@type": "Offer", "priceCurrency": "EUR", "priceSpecification": { "@type": "UnitPriceSpecification", "minPrice": 49, "priceCurrency": "EUR", "unitText": "mois" } }
 }
 </script>
 <script type="application/ld+json">
@@ -90,6 +90,21 @@
       "@type": "Question",
       "name": "Que se passe-t-il si je veux arrêter l'accompagnement mensuel ?",
       "acceptedAnswer": { "@type": "Answer", "text": "La résiliation est libre, sans engagement, sans préavis ni frais. La fiche Google Business et le site vitrine, le cas échéant, vous appartiennent à 100% : vous repartez avec tout ce qui a été créé." }
+    },
+    {
+      "@type": "Question",
+      "name": "Je suis déjà sur Pages Jaunes, ça ne suffit pas ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Un annuaire comme Pages Jaunes vous répertorie. Google Maps, lui, est l'endroit où beaucoup de clients cherchent directement un professionnel près de chez eux. Les deux se complètent, c'est pourquoi la formule Essentiel traite la fiche Google et les annuaires ensemble." }
+    },
+    {
+      "@type": "Question",
+      "name": "Je suis déjà sur Facebook, ce n'est pas suffisant ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Facebook touche surtout les personnes qui vous suivent déjà. Une fiche Google touche des personnes qui ne vous connaissent pas encore et qui cherchent activement votre métier dans votre ville. Les deux se complètent." }
+    },
+    {
+      "@type": "Question",
+      "name": "Pourquoi cette mention « à partir de » dans les tarifs ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Chaque situation est différente. Le prix affiché est un tarif de départ ; le prix exact vous est annoncé après notre premier échange, avant de commencer, et il ne change pas ensuite sans votre accord. Il dépend de l'état de votre fiche et du nombre d'annuaires (Essentiel), du nombre de pages du site (Présence Web) ou du volume mensuel à traiter (Accompagnement)." }
     }
   ]
 }
@@ -233,19 +248,19 @@
   <div class="container">
     <p class="section-label">Les prestations</p>
     <h2 class="section-title">Trois formules, selon vos besoins</h2>
-    <p class="section-lead">Un tarif transparent pour chaque étape — de la fiche Google à l'accompagnement continu.</p>
+    <p class="section-lead">Un tarif de départ transparent pour chaque étape — de la fiche Google à l'accompagnement continu. Le prix exact est confirmé après notre premier échange, avant de commencer.</p>
     <div class="offres-grid">
 
       <div class="offer-card">
         <p class="offer-name">Essentiel</p>
         <p class="offer-sub">Poser les bases</p>
-        <p class="offer-price">290 €</p>
+        <p class="offer-price">à partir de 290 €</p>
         <p class="offer-period">prestation unique</p>
         <ul class="offer-list">
           <li><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Création ou optimisation de la fiche Google Business Profile</li>
           <li><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Optimisation des informations (activité, catégories, services)</li>
           <li><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Ajout de photos et amélioration de la présentation</li>
-          <li><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Inscription sur plusieurs annuaires de référence</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Inscription sur plusieurs annuaires de référence et mise en cohérence de vos coordonnées</li>
         </ul>
         <a href="#contact" class="btn btn-outline">Choisir Essentiel</a>
       </div>
@@ -254,7 +269,7 @@
         <span class="offer-tag">Recommandé</span>
         <p class="offer-name">Présence Web</p>
         <p class="offer-sub">La solution complète</p>
-        <p class="offer-price">690 €</p>
+        <p class="offer-price">à partir de 690 €</p>
         <p class="offer-period">prestation unique</p>
         <ul class="offer-list">
           <li><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Tout le contenu du pack Essentiel</li>
@@ -262,6 +277,7 @@
           <li><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Formulaire de contact, version mobile</li>
           <li><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Liaison avec la fiche Google, aide à la mise en ligne</li>
         </ul>
+        <p class="offer-note">Votre fiche Google est déjà en place ? Le site seul démarre à partir de 490 €.</p>
         <a href="#contact" class="btn btn-primary">Choisir Présence Web</a>
       </div>
 
@@ -272,7 +288,8 @@
         <p class="offer-period">par mois</p>
         <ul class="offer-list">
           <li><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Mises à jour régulières de la fiche Google</li>
-          <li><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Ajout de photos et de publications</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Ajout de photos, de publications et d'actualités</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Réponses aux avis clients</li>
           <li><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Conseils sur la présence locale</li>
           <li><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Résiliable à tout moment, sans engagement</li>
         </ul>
@@ -333,6 +350,18 @@
       <summary>Et si je veux arrêter l'accompagnement ? <span class="plus">+</span></summary>
       <p>Résiliation libre, sans engagement, sans frais. La fiche Google et, le cas échéant, le site vous appartiennent. Vous repartez avec tout.</p>
     </details>
+    <details class="faq-item">
+      <summary>Je suis déjà sur Pages Jaunes, ça ne suffit pas ? <span class="plus">+</span></summary>
+      <p>Un annuaire comme Pages Jaunes vous répertorie. Google Maps, lui, est l'endroit où beaucoup de clients cherchent directement un professionnel près de chez eux. Les deux se complètent : c'est pourquoi la formule Essentiel traite la fiche Google et les annuaires ensemble.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Je suis déjà sur Facebook, ce n'est pas suffisant ? <span class="plus">+</span></summary>
+      <p>Facebook touche surtout les personnes qui vous suivent déjà. Une fiche Google touche des personnes qui ne vous connaissent pas encore et qui cherchent activement votre métier dans votre ville. Les deux se complètent.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Pourquoi cette mention « à partir de » dans les tarifs ? <span class="plus">+</span></summary>
+      <p>Chaque situation est différente. Le prix affiché est un tarif de départ ; le prix exact vous est annoncé après notre premier échange, avant de commencer, et il ne change pas ensuite sans votre accord. Il dépend de l'état de votre fiche et du nombre d'annuaires (Essentiel), du nombre de pages du site (Présence Web) ou du volume mensuel à traiter (Accompagnement).</p>
+    </details>
   </div>
 </section>
 
@@ -341,7 +370,6 @@
   <div class="container">
     <p class="section-label">Conditions et garanties</p>
     <h2 class="section-title">Ce qui est acquis, quoi qu'il arrive</h2>
-    <p class="section-lead">Les premiers effets d'une présence locale se construisent sur plusieurs semaines — c'est la réalité de tout travail de visibilité sérieux.</p>
     <div class="garanties-grid">
       <div class="garantie-card">
         <span class="dot"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></span>
@@ -383,7 +411,7 @@
       <div class="step">
         <div class="step-num">2</div>
         <h3>Validation</h3>
-        <p>Choix de la prestation la plus adaptée à votre situation.</p>
+        <p>Choix de la prestation la plus adaptée à votre situation, et confirmation du tarif exact avant de commencer.</p>
       </div>
       <div class="step">
         <div class="step-num">3</div>
