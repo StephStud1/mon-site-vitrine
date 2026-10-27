@@ -109,23 +109,11 @@ nav.links a.navlink:hover { color: var(--accent); }
 
 /* ── HERO ── */
 #hero {
-  padding: 170px 0 110px;
+  padding: 116px 0 110px;
 }
 #hero .blob:nth-child(1) { width: 480px; height: 480px; top: -260px; right: -140px; }
 #hero .blob:nth-child(2) { width: 420px; height: 420px; bottom: -220px; left: -160px; }
 .hero-content { max-width: 680px; }
-.hero-eyebrow {
-  display: inline-block;
-  background: var(--sage);
-  color: var(--dark);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 7px 18px;
-  border-radius: 999px;
-  margin-bottom: 22px;
-}
 .hero-content h1 { margin-bottom: 6px; }
 .title-main { display: block; color: var(--cream); font-size: clamp(2.2rem, 5.2vw, 3.4rem); font-weight: 700; }
 .title-sub { display: block; color: var(--sage); font-size: clamp(1.3rem, 3vw, 1.9rem); font-weight: 400; }
