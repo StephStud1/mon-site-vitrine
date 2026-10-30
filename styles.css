@@ -262,7 +262,14 @@ nav.links a.navlink:hover { color: var(--accent); }
 .offer-list svg { width: 16px; height: 16px; fill: var(--sage-pale); flex-shrink: 0; margin-top: 3px; }
 .offer-card.featured .offer-list svg { fill: var(--accent); }
 .offer-card .btn { justify-content: center; width: 100%; }
-.offer-card .btn-outline { background: rgba(247,242,228,0.12); color: var(--cream); }
+.offer-card .btn-outline { background: var(--cream); color: var(--dark); }
+.offer-card .btn-outline:hover { background: var(--sage-pale); }
+.offer-link { text-decoration: underline; }
+.offres-links { text-align: center; margin-top: 28px; font-size: 0.95rem; }
+.offres-links a { color: var(--cream); text-decoration: underline; }
+.offres-links a:hover { color: var(--sage-pale); }
+.a-confirmer { background: #F3D98B; color: #3A2E00; padding: 1px 6px; border-radius: 4px; font-size: 0.88em; }
+a.inline-link { color: var(--accent); text-decoration: underline; }
 .offer-card.featured .btn-outline { background: var(--dark2); color: var(--cream); }
 
 /* ── RÉALISTE / POURQUOI ── */
